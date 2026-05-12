@@ -1,8 +1,17 @@
 header{
     background-color: #bfdde0;
-    padding: 1rem 1rem 0;
+    padding: 1rem 1rem 1rem;
     display: flex;
     flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+h1{
+    display: none;
+}
+header>img{
+  max-width: 200px; 
+  height: auto;
 }
 body{
     margin: 1.5rem 1rem 0;
@@ -17,7 +26,7 @@ nav>a{
     background-color: #283d55;
     color: #80bc41;
     text-decoration: none;
-    padding: .5rem 1rem;
+    padding: .5rem .5rem;
     display: inline-block;
     margin: .25rem;
 }
@@ -25,8 +34,108 @@ nav>a:hover{
     background-color: #80bc41;
     color: #283d55;
 }
-@media (max-width: 1100px){
-    nav{
-   
+nav{
+    flex-basis: 100%;
+    text-align: center;
 }
+main {
+    padding-top: 1.5rem;
 }
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.product-image{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.events-images{
+    margin-top: 4rem;
+    text-align: left;
+}
+.events-images>img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.gallery{
+    position: relative;
+    width: calc(100% - 4rem);
+    max-width: 100%;
+    height: calc(100vw / 1.778);
+}
+.gallery .slide{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1rem;
+}
+.gallery{
+    overflow: hidden;
+}
+.gallery .slide{
+    overflow: hidden;
+}
+.arrow{
+    position: absolute;
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    z-index: 1;
+    top: calc(50% - 1.5rem);
+}
+.left{
+    left: .5rem;
+}
+.right{
+    right: .5rem;
+}
+.gallery img{
+ max-width: 100.025vw;
+ height: calc(100.25vw / 1.778);
+}
+@media (min-width: 1000px){
+nav{
+    display: flex;                
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;       
+    margin-left: auto;         
+}
+.gallery img{
+        max-width: 50vw;
+        height: calc(50vw / 1.778);
+    }
+    .gallery{
+        height: calc(50vw / 1.778);
+    }
+header{
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+  header>img{
+    margin-right: auto;        
+  }
+  .events-images{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  .events-images>img{
+    margin: 0;         
+  }
+
+}
+
