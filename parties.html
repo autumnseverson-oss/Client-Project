@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="icon" type="image/png" href="Images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon/favicon.svg">
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +13,10 @@
 </head>
 <body>
     <header>
-        <img src="Images/TheCraftNook-11.svg" alt="A paint pallete with the words The Craft Nook written under" width="150px">
-        <nav>
+        <div class="brand">
+        <img src="Images/TheCraftNook-11.svg" alt="A paint pallete with the words The Craft Nook written under" width="150">
+       </div> 
+       <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="events.html">Events</a>
@@ -18,8 +25,9 @@
         </nav>
     </header>
     <main>
+        <h1>Schedule a Party</h1>
         <h2>Please fill out this form to schedule a party!</h2>
-        <form action="submit_party_form.php" method="POST">
+        <form action="thankyou.html" method="POST">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br> 
             <label for="email">Email:</label><br>
@@ -30,7 +38,11 @@
             <input type="time" id="time" name="time" required><br><br>
             <label for="guests">Number of Guests:</label><br>
             <input type="number" id="guests" name="guests" min="1" required><br><br>  
-            <input type="submit" value="Submit">
+            <div class="actions">
+                <input type="reset">
+                <input type="submit">
+            </div>
+            </form>
     </main>
     </body>
 </html>
