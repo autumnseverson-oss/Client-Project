@@ -64,45 +64,6 @@ main {
     max-width: 450px;
     height: auto;
 }
-.gallery{
-    position: relative;
-    width: calc(100% - 4rem);
-    max-width: 100%;
-    height: calc(100vw / 1.778);
-}
-.gallery .slide{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 1rem;
-}
-.gallery{
-    overflow: hidden;
-}
-.gallery .slide{
-    overflow: hidden;
-}
-.arrow{
-    position: absolute;
-    font-size: 3rem;
-    font-family: Helvetica, sans-serif;
-    color: #fff;
-     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    z-index: 1;
-    top: calc(50% - 1.5rem);
-}
-.left{
-    left: .5rem;
-}
-.right{
-    right: .5rem;
-}
-.gallery img{
- max-width: 100.025vw;
- height: calc(100.25vw / 1.778);
-}
 @media (min-width: 1000px){
 nav{
     display: flex;                
@@ -112,13 +73,6 @@ nav{
     padding: 1rem 3rem;       
     margin-left: auto;         
 }
-.gallery img{
-        max-width: 50vw;
-        height: calc(50vw / 1.778);
-    }
-    .gallery{
-        height: calc(50vw / 1.778);
-    }
 header{
     display: flex;
     justify-content: flex-start;  
