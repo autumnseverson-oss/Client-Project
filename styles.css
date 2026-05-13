@@ -6,9 +6,6 @@ header{
   display: flex;
   justify-content: center;
 }
-h1{
-    display: none;
-}
 header>img{
   max-width: 200px; 
   height: auto;
@@ -136,6 +133,5 @@ header{
   .events-images>img{
     margin: 0;         
   }
-
 }
 
